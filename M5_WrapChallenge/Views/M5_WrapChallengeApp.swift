@@ -11,7 +11,8 @@ import SwiftUI
 struct M5_WrapChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AllVideos(model: VideoModel())
+                //.environmentObject(VideoModel())
         }
     }
 }
